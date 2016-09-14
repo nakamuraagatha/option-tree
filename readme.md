@@ -1,4 +1,4 @@
-=== OptionTree ===
+### OptionTree
 Contributors: valendesigns
 Donate link: http://bit.ly/NuXI3T
 Tags: options, theme options, meta boxes
@@ -9,7 +9,7 @@ License: GPLv3
 
 Theme Options UI Builder for WordPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes.
 
-== Description ==
+## Description
 
 OptionTree attempts to bridge the gap between WordPress developers, designers and end-users by creating fully responsive option panels and meta boxes with an ease unlike any other plugin. OptionTree has many advanced features with well placed hooks and filters to adjust every aspect of the user experience. 
 
@@ -77,7 +77,7 @@ This is a complete list of all the available option types that come shipped with
 * Typography
 * Upload
 
-== Installation ==
+## Installation 
 
 **Plugin Mode**
 
@@ -92,14 +92,12 @@ This is a complete list of all the available option types that come shipped with
 1. You must deactivate and/or delete the plugin version of OptionTree.
 1. Add the following code to the beginning of your `functions.php`.
 
-`/**
- * Required: set 'ot_theme_mode' filter to true.
- */
+#### Required: set 'ot_theme_mode' filter to true.
+ 
 add_filter( 'ot_theme_mode', '__return_true' );
 
-/**
- * Required: include OptionTree.
- */
+#### Required: include OptionTree.
+ 
 require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );`
 
 For a list of all the OptionTree UI display filters refer to the `demo-functions.php` file found in the `/assets/theme-mode/` directory of this plugin. This file is the starting point for developing themes with Theme Mode.
